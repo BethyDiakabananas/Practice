@@ -5,9 +5,9 @@ public class Power {
 			exponent = -exponent;
 		} // end if
 		
-		double result = 0;
+		double result = 1;
 		for (int i = 0; i < exponent; i++) 
-			result *= 1;
+			result *= base;
 		
 		return result;
 	} // end method findPower
