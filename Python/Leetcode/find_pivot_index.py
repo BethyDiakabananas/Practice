@@ -3,10 +3,11 @@
         :type nums: List[int]
         :rtype: int
         """
-        left, right = 0, sum(nums)
+        S = sum(nums)
+        left = 0
         for i, num in enumerate(nums):
-            right -= num
-            if left == right:
+            if left == S - left - num:
                 return i
             left += num
-        return -1
+        return -1;
+         
